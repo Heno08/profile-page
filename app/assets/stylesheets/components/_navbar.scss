@@ -1,12 +1,18 @@
-.navbar-lewagon {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+.navbar {
   justify-content: space-between;
   background: white;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar .navbar-brand img {
   width: 40px;
+}
+
+h2 {
+  font-family: 'Smooch Sans', sans-serif;
 }
