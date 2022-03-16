@@ -1,1 +1,35 @@
 // Specific CSS for your home-page
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+.item-header {
+  grid-area: header;
+  justify-content: space-between;
+  background: white;
+}
+.item-main {
+  grid-area: main;
+  padding: 20px;
+}
+.item-sidebar {
+  grid-area: sidebar;
+  padding: 20px;
+  height: 100vh;
+}
+.item-footer {
+  grid-area: footer;
+  background: white;
+}
+
+.container-grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+
+h2 {
+  font-family: 'Smooch Sans', sans-serif;
+}
