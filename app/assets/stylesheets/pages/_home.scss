@@ -29,8 +29,6 @@
   grid-area: projects;
   // height: 65vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .item-footer {
   grid-area: footer;
@@ -62,9 +60,11 @@
 
 .project-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: subgrid;
   grid-gap: 16px;
   align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .project-card {
