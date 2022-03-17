@@ -19,15 +19,22 @@
   padding: 20px;
   background: #edeced;
 }
-.item-sidebar {
+.item-about {
   grid-area: sidebar;
   padding: 20px;
-  height: 100vh;
+  height: 65vh;
 
+}
+.item-projects {
+  grid-area: projects;
+  height: 35vh;
 }
 .item-footer {
   grid-area: footer;
   background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-grids {
@@ -37,6 +44,7 @@
   grid-template-areas:
     "header header header header"
     "main . sidebar ."
+    "main projects projects ."
     "footer footer footer footer";
 }
 
@@ -49,6 +57,10 @@
   padding-top: 20px;
 }
 
+ul {
+  padding: 0px;
+}
+
 li {
   list-style-type: none;
   display: inline-block;
@@ -56,6 +68,6 @@ li {
   justify-items: center;
 
   li:hover {
-    opacity: 40%;
+    opacity: 50%;
   }
 }
