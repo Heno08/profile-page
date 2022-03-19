@@ -41,29 +41,40 @@
 
 .container-grids {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "header header header header"
-    "main . sidebar ."
-    "main projects projects projects"
-    "footer footer footer footer";
+    "header"
+    "main"
+    "sidebar"
+    "projects"
+    "footer";
 
-  @media only screen and (max-width: 450px)  {
+  @media only screen and (min-width: 450px)  {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "header"
-      "main"
-      "sidebar"
-      "projects"
-      "footer";
+      "header header"
+      "main sidebar"
+      "projects projects"
+      "footer footer";
+  }
+
+  @media only screen and (min-width: 850px)  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header header"
+      "main . sidebar ."
+      "main projects projects projects"
+      "footer footer footer footer";
   }
 }
 
 .avatar-large {
-  width: 400px;
+  width: 300px;
   border-radius: 50%;
 
   @media only screen and (max-width: 450px) {
