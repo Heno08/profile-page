@@ -7,10 +7,18 @@
   </div>
   <div class="item-projects">
     <h2>Projects...</h2>
-      <div class="project-cards">
-        <div class="project-card"> <%= image_tag 'goodtermshome.jpg', style:"background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))" %>
-          Good Terms - A website to help people who like to lend their belongings. Made in collaboration as part of the Le Wagon course.
+      <div class="project-cards" data-controller='modal'>
+        <div class="project-card"> <button id="btn" data-action='click->modal#launchProject'><%= image_tag 'goodtermshome.jpg', style:"background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))" %></button>
+          Good Terms
         </div>
+        <div id="goodTermsModal" class="modal" data-modal-target="project">
+          <div class="modal-content">
+            <span class="close" data-action='click->modal#close'>&times;</span>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TtD9ku9WZX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Good Terms - A website to help people who like to lend their belongings. Made in collaboration as part of the Le Wagon course. This video was taken on the final day of the project. This link to the site can be found <a href="http://www.goodterms.fun" target="_blank">here</a></p>
+          </div>
+        </div>
+
         <div class="project-card"> <%= image_tag 'default-product-image.png', style:"background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))" %>
           Coming Soon...
         </div>

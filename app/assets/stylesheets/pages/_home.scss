@@ -30,6 +30,7 @@
   // height: 65vh;
   // display: flex;
   text-align: center;
+  padding-bottom: 50px;
 }
 .item-footer {
   grid-area: footer;
@@ -135,4 +136,8 @@ li {
   li:hover {
     opacity: 50%;
   }
+}
+
+#btn {
+  border: none;
 }
